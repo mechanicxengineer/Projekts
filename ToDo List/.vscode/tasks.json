@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build App",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-static",
+        "app.cpp",
+        "mainframe.cpp",
+        "task.cpp",
+        "E:/Projects/wxLearn/resource/resources.o",
+        "-I", "E:/Projects/wxLearn/wxWidgets/include",
+        "-I", "E:/Projects/wxLearn/wxWidgets/lib/gcc_lib/mswu",
+        "-L", "E:/Projects/wxLearn/wxWidgets/lib/gcc_lib",
+        "-lwxmsw33u_core",
+        "-lwxbase33u",
+        "-lole32",
+        "-loleaut32",
+        "-luuid",
+        "-lshell32",
+        "-lcomdlg32",
+        "-lshlwapi",
+        "-lversion",
+        "-std=c++17",
+        "-lgdiplus",
+        "-lgdi32",
+        "-lmsimg32",
+        "-lwxpng",
+        "-luxtheme",
+        "-lcomctl32",
+        "-lusp10",
+        "-ldwrite",
+        "-ld2d1",
+        "-ldwmapi",
+        "-loleacc",
+        "-lwinspool",
+        "-lwxzlib",
+        "-mwindows",
+        "-o",
+        "build/app.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

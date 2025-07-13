@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "name": "MinGW-wxWidgets",
+      "includePath": [
+        "${workspaceFolder}/wxWidgets/include",
+        "${workspaceFolder}/wxWidgets/lib/gcc_lib/mswu",
+        "${workspaceFolder}/**"
+      ],
+      "defines": [
+        "__WXMSW__",
+        "_UNICODE",
+        "UNICODE"
+      ],
+      "compilerPath": "C:/mingw64/bin/g++.exe",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-gcc-x64"
+    }
+  ],
+  "version": 4
+}
